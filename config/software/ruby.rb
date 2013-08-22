@@ -98,6 +98,7 @@ build do
 
   case platform
   when "aix"
+    configure_command << "--enable-threads=aix"
     patch :source => "ruby-aix-configure.patch", :plevel => 1
     # --with-opt-dir causes ruby to send bogus commands to the AIX linker
   when "freebsd"
