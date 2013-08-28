@@ -76,6 +76,8 @@ env =
       # We also need prezl's M4 instead of picking up /usr/bin/m4 which
       # barfs on ruby.
       #
+      "CC" => "gcc -maix64"
+      "LD" => "ld -b64"
       "CFLAGS" => "-maix64 -I/opt/freeware/include -O",
       "LDFLAGS" => "-maix64 -L/opt/freeware/lib64 -L/opt/freeware/lib -Wl,-brtl -Wl,-blibpath:/opt/freeware/lib64:/opt/freeware/lib:/usr/lib:/lib",
       "OBJECT_MODE" => "64",
