@@ -30,6 +30,7 @@ env = case platform
         {
           "LDFLAGS" => "-Wl,-blibpath:#{install_dir}/embedded/lib:/usr/lib:/lib -L#{install_dir}/embedded/lib",
           "CFLAGS" => "-I#{install_dir}/embedded/include",
+          "OBJECT_MODE" => "64",
           "CC" => "xlc",
           "CXX" => "xlC"
         }
