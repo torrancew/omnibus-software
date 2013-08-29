@@ -78,8 +78,8 @@ env =
       #
       "CC" => "gcc -maix64",
       "LD" => "ld -b64",
-      "CFLAGS" => "-maix64 -I/opt/freeware/include -O",
-      "LDFLAGS" => "-maix64 -L/opt/freeware/lib64 -L/opt/freeware/lib -Wl,-brtl -Wl,-blibpath:/opt/freeware/lib64:/opt/freeware/lib:/usr/lib:/lib",
+      "CFLAGS" => "-maix64 -I#{install_dir}/embedded/include -O",
+      "LDFLAGS" => "-maix64 -L#{install_dir}/embedded/lib -Wl,-brtl -Wl,-blibpath:#{install_dir}/embedded/lib:/usr/lib:/lib",
       "OBJECT_MODE" => "64",
       "ARFLAGS" => "-X64 cru",
       "M4" => "/opt/freeware/bin/m4",
