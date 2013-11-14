@@ -16,8 +16,9 @@
 #
 
 name "berkshelf"
-version "1.4.3"
+version "2.0.10"
 
+dependency "libffi"
 dependency "ruby"
 dependency "rubygems"
 dependency "nokogiri"
